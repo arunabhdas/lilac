@@ -1,4 +1,4 @@
 # Lilac
 
-An Enterprise API Using Spring Framework
+A Crypto Assets Portfolio API Using Spring Framework
 
