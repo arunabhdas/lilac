@@ -2,17 +2,18 @@ package com.arunabhdas.service;
 
 import com.arunabhdas.model.CryptoAsset;
 import com.arunabhdas.repository.CryptoAssetsRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class CryptoAssetsService implements CrudService<CryptoAsset> {
 
     private CryptoAssetsRepository repository;
 
-    public CryptoAssetsService() {
-        repository = new CryptoAssetsRepository();
+    public CryptoAssetsService(CryptoAssetsRepository cryptoAssetsRepository) {
+        repository = cryptoAssetsRepository;
     }
 
     @Override
